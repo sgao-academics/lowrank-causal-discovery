@@ -1,0 +1,11 @@
+{
+  "dataset": "Sachs",
+  "d": 11,
+  "n": 7466,
+  "true_edges": 17,
+  "our_edges": 115,
+  "f1": 0.2576,
+  "precision": 0.1478,
+  "recall": 1.0,
+  "time_s": 1.916
+}

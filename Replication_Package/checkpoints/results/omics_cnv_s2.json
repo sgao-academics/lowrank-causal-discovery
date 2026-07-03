@@ -1,0 +1,12 @@
+{
+  "task": "omics_cnv",
+  "seed": 2,
+  "d": 200,
+  "n": 1886,
+  "edges": 39907,
+  "time_s": 257.6,
+  "d_model": 128,
+  "n_heads": 8,
+  "n_epochs": 500,
+  "h_W": 9.1552734375e-05
+}

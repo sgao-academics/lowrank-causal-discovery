@@ -1,0 +1,12 @@
+{
+  "task": "mlp_baseline",
+  "seed": 4,
+  "d": 200,
+  "n": 1000,
+  "edges": 37690,
+  "time_s": 130.4,
+  "d_model": 128,
+  "n_heads": 8,
+  "n_epochs": 500,
+  "h_W": 0.0
+}

@@ -1,0 +1,12 @@
+{
+  "task": "omics_methylation",
+  "seed": 4,
+  "d": 200,
+  "n": 2000,
+  "edges": 0,
+  "time_s": 210.9,
+  "d_model": 128,
+  "n_heads": 8,
+  "n_epochs": 500,
+  "h_W": NaN
+}

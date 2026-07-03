@@ -1,0 +1,32 @@
+[
+  {
+    "d": 300,
+    "n": 230,
+    "gt_edges": 6094,
+    "gnn_edges": 6523,
+    "f1": 0.935,
+    "recovery_pct": 96.8,
+    "time_s": 0.2,
+    "params": 38400
+  },
+  {
+    "d": 500,
+    "n": 230,
+    "gt_edges": 18948,
+    "gnn_edges": 22085,
+    "f1": 0.871,
+    "recovery_pct": 94.3,
+    "time_s": 0.1,
+    "params": 64000
+  },
+  {
+    "d": 1000,
+    "n": 230,
+    "gt_edges": 84862,
+    "gnn_edges": 104054,
+    "f1": 0.825,
+    "recovery_pct": 91.8,
+    "time_s": 0.2,
+    "params": 128000
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "tag": "d100_n200_d128_h8_e200_s3",
+  "d": 100,
+  "n": 200,
+  "strategy": "d128_h8_e200",
+  "seed": 3,
+  "data_seed": 12045,
+  "edges": 10000,
+  "true_edges": 115,
+  "time_s": 101.6,
+  "d_model": 128,
+  "n_heads": 8,
+  "n_epochs": 200
+}

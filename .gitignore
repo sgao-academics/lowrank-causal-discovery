@@ -1,0 +1,31 @@
+# Temporary and generated files
+*.aux
+*.log
+*.out
+*.blg
+*.bbl
+*.toc
+*.lot
+*.lof
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.thm
+*.nav
+*.snm
+*.vrb
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Checkpoint data (too large for git, use Replication_Package.zip instead)
+checkpoints/results_synth/
+checkpoints/results/
+checkpoints/*_repro.json
+checkpoints/gap1_lowrank.json
+checkpoints/depmap_meta.json
+
+# Temp scripts
+checkpoints/_check_log.py
+checkpoints/_compile.py

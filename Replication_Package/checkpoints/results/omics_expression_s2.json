@@ -1,0 +1,12 @@
+{
+  "task": "omics_expression",
+  "seed": 2,
+  "d": 200,
+  "n": 1218,
+  "edges": 40000,
+  "time_s": 255.0,
+  "d_model": 128,
+  "n_heads": 8,
+  "n_epochs": 500,
+  "h_W": 0.0050201416015625
+}

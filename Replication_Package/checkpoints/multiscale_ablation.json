@@ -1,0 +1,8 @@
+{
+  "single_scale_edges": 7974,
+  "multi_scale_edges": 7640,
+  "gain_pct": -4.2,
+  "single_time_s": 0.489,
+  "multi_time_s": 0.926,
+  "interpretation": "Multi-scale discovers -4% more unique edges"
+}

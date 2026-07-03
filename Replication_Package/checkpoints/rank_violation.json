@@ -1,0 +1,57 @@
+[
+  {
+    "density": 0.02,
+    "true_edges": 101,
+    "eff_rank": 52,
+    "f1": 0.2755,
+    "prec": 0.1647,
+    "rec": 0.8416,
+    "gt_edges": 476,
+    "pred_edges": 516,
+    "time_s": 2.366
+  },
+  {
+    "density": 0.05,
+    "true_edges": 228,
+    "eff_rank": 62,
+    "f1": 0.1671,
+    "prec": 0.0948,
+    "rec": 0.7018,
+    "gt_edges": 1638,
+    "pred_edges": 1687,
+    "time_s": 0.49
+  },
+  {
+    "density": 0.1,
+    "true_edges": 515,
+    "eff_rank": 84,
+    "f1": 0.1097,
+    "prec": 0.0597,
+    "rec": 0.6796,
+    "gt_edges": 5742,
+    "pred_edges": 5864,
+    "time_s": 0.519
+  },
+  {
+    "density": 0.15,
+    "true_edges": 770,
+    "eff_rank": 85,
+    "f1": 0.1469,
+    "prec": 0.0812,
+    "rec": 0.7662,
+    "gt_edges": 7188,
+    "pred_edges": 7264,
+    "time_s": 0.505
+  },
+  {
+    "density": 0.2,
+    "true_edges": 1009,
+    "eff_rank": 88,
+    "f1": 0.1811,
+    "prec": 0.105,
+    "rec": 0.6571,
+    "gt_edges": 6158,
+    "pred_edges": 6313,
+    "time_s": 0.515
+  }
+]

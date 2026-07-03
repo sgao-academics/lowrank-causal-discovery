@@ -1,0 +1,38 @@
+[
+  {
+    "scale": 1,
+    "component": 1,
+    "singular_value": 3.1,
+    "interpretation": "Estrogen\nPathway"
+  },
+  {
+    "scale": 1,
+    "component": 2,
+    "singular_value": 2.796,
+    "interpretation": "Cell Cycle\nRegulation"
+  },
+  {
+    "scale": 1,
+    "component": 3,
+    "singular_value": 2.539,
+    "interpretation": "Immune\nEvasion"
+  },
+  {
+    "scale": 2,
+    "component": 1,
+    "singular_value": 5.187,
+    "interpretation": "Metabolic\nReprogramming"
+  },
+  {
+    "scale": 2,
+    "component": 2,
+    "singular_value": 4.384,
+    "interpretation": "Cross-Module\nSpillover"
+  },
+  {
+    "scale": 2,
+    "component": 3,
+    "singular_value": 3.762,
+    "interpretation": "Global\nCoordination"
+  }
+]
