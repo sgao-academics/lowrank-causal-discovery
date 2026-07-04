@@ -1,0 +1,7 @@
+# LowRankGNN ICLR 2027 — Reproduction Requirements
+# Install: pip install -r requirements.txt
+# Python 3.12+ (as stated in paper)
+matplotlib>=3.7.0
+numpy>=1.24.0
+scipy>=1.10.0
+torch>=2.0.0

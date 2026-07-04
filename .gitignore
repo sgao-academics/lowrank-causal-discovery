@@ -1,4 +1,4 @@
-# Temporary and generated files
+# LaTeX build artifacts
 *.aux
 *.log
 *.out
@@ -19,13 +19,10 @@
 __pycache__/
 *.pyc
 
-# Checkpoint data (too large for git, use Replication_Package.zip instead)
-checkpoints/results_synth/
-checkpoints/results/
+# Temp/development scripts in checkpoints
+checkpoints/_*.py
+
+# Large data (use Replication_Package.zip instead)
 checkpoints/*_repro.json
 checkpoints/gap1_lowrank.json
 checkpoints/depmap_meta.json
-
-# Temp scripts
-checkpoints/_check_log.py
-checkpoints/_compile.py
