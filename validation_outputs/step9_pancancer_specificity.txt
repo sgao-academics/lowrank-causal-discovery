@@ -1,0 +1,85 @@
+network genes = 2879 ; measurable in Indian = 2809
+Indian both-up FDR<0.05 (334-set) = 334 ; both-significant (578-set) = 578
+Fisher Top-9 = STAT1, FOSL1, CXCL8, MMP9, E2F1, CXCL10, JUN, RELA, ETS1
+
+ACC    tumour=79 normal=0  -> SKIPPED (too few normals)
+BLCA  n=407/ 19 | core 326  up 230( 71%)  up&p<.05 174( 53%) | bg 55%/33% (n=326) | OR  2.38 | coreScore d=-0.028 p=5.56e-01 | 1s
+BRCA  n=1097/114 | core 326  up 224( 69%)  up&p<.05 204( 63%) | bg 46%/33% (n=326) | OR  3.33 | coreScore d=+0.313 p=3.99e-12 | 3s
+CESC  n=303/  3 | core 326  up 255( 78%)  up&p<.05 148( 45%) | bg 56%/18% (n=326) | OR  3.84 | coreScore d=+0.976 p=2.12e-03 | 1s
+CHOL  n= 36/  9 | core 326  up 246( 75%)  up&p<.05 191( 59%) | bg 60%/39% (n=326) | OR  2.19 | coreScore d=+0.454 p=8.67e-03 | 0s
+COAD  n=286/ 41 | core 326  up 226( 69%)  up&p<.05 205( 63%) | bg 44%/32% (n=326) | OR  3.67 | coreScore d=+0.634 p=2.47e-13 | 1s
+DLBC   tumour=48 normal=0  -> SKIPPED (too few normals)
+ESCA  n=184/ 11 | core 326  up 286( 88%)  up&p<.05 231( 71%) | bg 55%/24% (n=326) | OR  7.60 | coreScore d=+0.909 p=1.93e-07 | 1s
+GBM   n=154/  5 | core 326  up 266( 82%)  up&p<.05 198( 61%) | bg 56%/32% (n=326) | OR  3.26 | coreScore d=+1.717 p=2.52e-09 | 1s
+HNSC  n=520/ 44 | core 326  up 297( 91%)  up&p<.05 276( 85%) | bg 50%/31% (n=326) | OR 12.30 | coreScore d=+0.829 p=2.01e-18 | 2s
+KICH  n= 66/ 25 | core 326  up 157( 48%)  up&p<.05 113( 35%) | bg 42%/27% (n=326) | OR  1.43 | coreScore d=-0.083 p=5.02e-01 | 0s
+KIRC  n=533/ 72 | core 326  up 233( 71%)  up&p<.05 219( 67%) | bg 52%/38% (n=326) | OR  3.33 | coreScore d=+1.021 p=4.43e-34 | 2s
+KIRP  n=290/ 32 | core 326  up 215( 66%)  up&p<.05 176( 54%) | bg 47%/28% (n=326) | OR  3.03 | coreScore d=+0.103 p=1.80e-01 | 1s
+LAML   tumour=0 normal=0  -> SKIPPED (too few normals)
+LGG    tumour=516 normal=0  -> SKIPPED (too few normals)
+LIHC  n=371/ 50 | core 326  up 200( 61%)  up&p<.05 168( 52%) | bg 60%/43% (n=326) | OR  1.41 | coreScore d=+0.007 p=9.94e-01 | 1s
+LUAD  n=515/ 59 | core 326  up 231( 71%)  up&p<.05 202( 62%) | bg 51%/34% (n=326) | OR  3.16 | coreScore d=+0.100 p=5.43e-02 | 2s
+LUSC  n=502/ 51 | core 326  up 215( 66%)  up&p<.05 194( 60%) | bg 55%/40% (n=326) | OR  2.16 | coreScore d=+0.106 p=5.97e-02 | 2s
+MESO   tumour=87 normal=0  -> SKIPPED (too few normals)
+OV     tumour=304 normal=0  -> SKIPPED (too few normals)
+PAAD  n=178/  4 | core 326  up 187( 57%)  up&p<.05  39( 12%) | bg 50%/5% (n=326) | OR  2.63 | coreScore d=-0.069 p=9.37e-01 | 1s
+PCPG  n=179/  3 | core 326  up 184( 56%)  up&p<.05  79( 24%) | bg 52%/20% (n=326) | OR  1.28 | coreScore d=+0.030 p=9.75e-01 | 1s
+PRAD  n=497/ 52 | core 326  up 163( 50%)  up&p<.05 129( 40%) | bg 52%/35% (n=326) | OR  1.22 | coreScore d=+0.196 p=1.38e-02 | 2s
+READ  n= 94/ 10 | core 326  up 233( 71%)  up&p<.05 179( 55%) | bg 45%/24% (n=326) | OR  3.81 | coreScore d=+0.789 p=6.70e-04 | 1s
+SARC   tumour=259 normal=2  -> SKIPPED (too few normals)
+SKCM   tumour=104 normal=1  -> SKIPPED (too few normals)
+STAD  n=415/ 35 | core 326  up 268( 82%)  up&p<.05 216( 66%) | bg 55%/29% (n=326) | OR  4.70 | coreScore d=+0.660 p=2.99e-09 | 1s
+TGCT   tumour=150 normal=0  -> SKIPPED (too few normals)
+THCA  n=505/ 59 | core 326  up 213( 65%)  up&p<.05 187( 57%) | bg 46%/30% (n=326) | OR  3.08 | coreScore d=+0.336 p=7.72e-05 | 2s
+THYM   tumour=120 normal=2  -> SKIPPED (too few normals)
+UCEC  n=176/ 24 | core 326  up 230( 71%)  up&p<.05 195( 60%) | bg 51%/29% (n=326) | OR  3.62 | coreScore d=+0.413 p=1.28e-05 | 1s
+UCS    tumour=57 normal=0  -> SKIPPED (too few normals)
+UVM    tumour=80 normal=0  -> SKIPPED (too few normals)
+
+total elapsed 30.0 s
+
+=== ranking by replication strength (fraction of core genes up&p<0.05) ===
+ 1. HNSC    85%  OR=12.3   (n=520/44)
+ 2. ESCA    71%  OR=7.6   (n=184/11)
+ 3. KIRC    67%  OR=3.33   (n=533/72)
+ 4. STAD    66%  OR=4.7   (n=415/35)
+ 5. COAD    63%  OR=3.67   (n=286/41)
+ 6. BRCA    63%  OR=3.33   (n=1097/114)
+ 7. LUAD    62%  OR=3.16   (n=515/59)
+ 8. GBM     61%  OR=3.26   (n=154/5)
+ 9. UCEC    60%  OR=3.62   (n=176/24)
+10. LUSC    60%  OR=2.16   (n=502/51)
+11. CHOL    59%  OR=2.19   (n=36/9)
+12. THCA    57%  OR=3.08   (n=505/59)
+13. READ    55%  OR=3.81   (n=94/10)
+14. KIRP    54%  OR=3.03   (n=290/32)
+15. BLCA    53%  OR=2.38   (n=407/19)
+16. LIHC    52%  OR=1.41   (n=371/50)
+17. CESC    45%  OR=3.84   (n=303/3)
+18. PRAD    40%  OR=1.22   (n=497/52)
+19. KICH    35%  OR=1.43   (n=66/25)
+20. PCPG    24%  OR=1.28   (n=179/3)
+21. PAAD    12%  OR=2.63   (n=178/4)
+
+=== ranking by core-score delta (Fisher-9, tumour vs normal) ===
+ 1. GBM    d=+1.717  p=2.52e-09
+ 2. KIRC   d=+1.021  p=4.43e-34
+ 3. CESC   d=+0.976  p=2.12e-03
+ 4. ESCA   d=+0.909  p=1.93e-07
+ 5. HNSC   d=+0.829  p=2.01e-18
+ 6. READ   d=+0.789  p=6.70e-04
+ 7. STAD   d=+0.660  p=2.99e-09
+ 8. COAD   d=+0.634  p=2.47e-13
+ 9. CHOL   d=+0.454  p=8.67e-03
+10. UCEC   d=+0.413  p=1.28e-05
+11. THCA   d=+0.336  p=7.72e-05
+12. BRCA   d=+0.313  p=3.99e-12
+13. PRAD   d=+0.196  p=1.38e-02
+14. LUSC   d=+0.106  p=5.97e-02
+15. KIRP   d=+0.103  p=1.80e-01
+16. LUAD   d=+0.100  p=5.43e-02
+17. PCPG   d=+0.030  p=9.75e-01
+18. LIHC   d=+0.007  p=9.94e-01
+19. BLCA   d=-0.028  p=5.56e-01
+20. PAAD   d=-0.069  p=9.37e-01
+21. KICH   d=-0.083  p=5.02e-01

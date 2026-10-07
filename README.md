@@ -23,7 +23,7 @@ and are listed under **Data sources** below.
 | `scripts/_bench_partition_notears.py` | Synthetic Erdős–Rényi benchmark: low-rank estimator vs explicit-adjacency methods. |
 | `figure_scripts/_gen_figs_oral.py` | Generates Figures 1-3 and Figure S2 from `checkpoints/edge_list.csv` and the cohort matrices. |
 | `figures_cs/` | The generated figures (PDF and PNG). |
-| `scripts/validation/` | The eight external-validation and robustness analyses (see below). |
+| `scripts/validation/` | The ten external-validation and robustness analyses (see below). |
 | `validation_outputs/` | The raw console output of each validation script, as run. |
 
 ### Validation scripts
@@ -39,6 +39,8 @@ and are listed under **Data sources** below.
 | `step6_hallmark_enrichment.py` | Section S3 — MSigDB hallmark enrichment of the estimator-proposed edges, against uniform and degree-matched nulls |
 | `step7_degree_vs_differential_expression.py` | Section S6 — what the degree ranking does and does not predict |
 | `step8_gene_set_enrichment.py` | Section S4 — gene-set enrichment with odds ratios and confidence intervals |
+| `step9_pancancer_specificity.py` | Section S12 — the core across all 21 TCGA cohorts with adjacent normal tissue |
+| `step10_multiomics_cnv_methylation.py` | Section S13 — GISTIC copy number and 450k promoter methylation of the core genes (TCGA-HNSC) |
 
 ---
 
@@ -56,6 +58,8 @@ Download these yourself; none is redistributed here.
 | GDSC2 drug-response dataset | https://www.cancerrxgene.org/downloads |
 | MSigDB hallmark gene sets | https://www.gsea-msigdb.org/gsea/msigdb/human/collections.jsp |
 | TCGA-HNSC expression (pan-cancer normalised release) | https://xenabrowser.net/datapages/ |
+| TCGA-HNSC gene-level GISTIC copy number and HumanMethylation450 beta values | UCSC Xena, `TCGA.HNSC.sampleMap` (https://xenabrowser.net/datapages/) |
+| Illumina HumanMethylation450 manifest v1.2 (probe-to-gene and region annotation) | https://webdata.illumina.com/downloads/productfiles/humanmethylation450/humanmethylation450_15017482_v1-2.csv |
 | TRRUST v2 | https://www.grnpedia.org/trrust/ |
 
 ---
@@ -68,6 +72,11 @@ The scripts use two placeholders so that no local path is hard-coded:
   expect a layout such as
   `{DATA_ROOT}/cancer_application/data/indian_oral/` (the two cohort series matrices
   and `indian_genomewide_de.json`), `{DATA_ROOT}/single_cell/`, and so on.
+  `step9_pancancer_specificity.py` additionally expects the 33 per-cohort
+  `TCGA_<CODE>_HiSeqV2.tsv` matrices under `{DATA_ROOT}/cancer_application/data/`.
+  `step10_multiomics_cnv_methylation.py` downloads its two Xena files and the
+  Illumina manifest into `{DATA_ROOT}/cancer_application/data/hnsc_multiomics/`
+  on first run.
 * Paths beginning with `.` are relative to this repository.
 
 Run every script from the repository root.
