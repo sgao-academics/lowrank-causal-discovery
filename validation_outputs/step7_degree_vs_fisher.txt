@@ -1,0 +1,43 @@
+network genes = 2879 ; discovered edges = 18972
+measurable in both cohorts = 2809
+both-cohort FDR<0.05 & up = 338
+both-cohort (any direction) = 578
+
+Spearman(out-degree, -log10 Fisher p) = 0.024  p=1.97e-01  (n=2809)
+both-up genes: mean out-degree 7.7 (median 2) vs rest 6.6 (median 2)  MWU p=1.61e-01
+baseline share both-up = 11.9%
+  top- 25 out-degree:   5/ 25 = 20.0% both-up
+  top- 50 out-degree:   9/ 50 = 18.0% both-up
+  top-100 out-degree:  12/100 = 12.0% both-up
+  top-200 out-degree:  26/200 = 13.0% both-up
+  top-400 out-degree:  46/400 = 11.5% both-up
+
+Spearman(in-degree, -log10 Fisher p) = 0.044  p=1.98e-02
+  top- 50 in-degree :  10/ 50 = 20.0% both-up
+  top-100 in-degree :  21/100 = 21.0% both-up
+  top-200 in-degree :  35/200 = 17.5% both-up
+
+Fisher top-9 out-degree:
+  STAT1   out= 142  rank=9/2809  in=26
+  FOSL1   out=  21  rank=197/2809  in=13
+  CXCL8   out=   0  rank=2257/2809  in=48
+  MMP9    out=   1  rank=1838/2809  in=35
+  E2F1    out= 244  rank=4/2809  in=63
+  CXCL10  out=   2  rank=1283/2809  in=9
+  JUN     out= 194  rank=7/2809  in=45
+  RELA    out= 293  rank=3/2809  in=36
+  ETS1    out= 125  rank=13/2809  in=5
+
+top-12 out-degree hubs -> both-up?
+  SP1      out= 369  both-up=False  FisherP=3.0e-02
+  NFKB1    out= 320  both-up=False  FisherP=6.2e-01
+  RELA     out= 293  both-up=False  FisherP=8.0e-07
+  E2F1     out= 244  both-up=True  FisherP=4.9e-07
+  TP53     out= 228  both-up=False  FisherP=1.3e-02
+  MYC      out= 198  both-up=False  FisherP=5.0e-01
+  JUN      out= 194  both-up=True  FisherP=6.8e-07
+  STAT3    out= 188  both-up=False  FisherP=4.6e-04
+  STAT1    out= 142  both-up=True  FisherP=3.6e-10
+  SP3      out= 136  both-up=False  FisherP=8.7e-05
+  BRCA1    out= 131  both-up=True  FisherP=1.2e-05
+  HDAC1    out= 126  both-up=False  FisherP=1.7e-04

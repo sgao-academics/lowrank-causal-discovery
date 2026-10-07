@@ -1,0 +1,59 @@
+edge_list columns = ['source_gene', 'target_gene', 'weight', 'source']
+edge rows=28247  unique network genes=2879
+network genes measurable in both = 2809
+
+GSE85195: BH<0.05 = 1409  (up=731 down=678)
+GSE23558: BH<0.05 = 831  (up=521 down=310)
+
+*** significant in BOTH cohorts: 578 total ***
+UP in both  (334): ['BCAR1', 'TEAD4', 'ITGB4', 'DHRS2', 'FST', 'PLAU', 'CCL3', 'COL4A1', 'STAT1', 'TAP1', 'PDLIM7', 'GMPS', 'FOXM1', 'SPP1', 'MMP1', 'CTSL', 'RAD51', 'CA9', 'PTHLH', 'TNFRSF12A', 'FPGS', 'MED15', 'RHOC', 'ERF', 'HLA-A', 'MET', 'NOLC1', 'PML', 'SOX9', 'SMAD3', 'ABL2', 'GABPB1', 'MT1G', 'IRF6', 'FOXK2', 'CDH3', 'CSF2', 'FUBP1', 'CDC6', 'DCBLD2', 'CTBP2', 'KIF2C', 'HMGA2', 'AATF', 'CD274', 'THBS1', 'TK1', 'EPSTI1', 'TNFAIP3', 'MNAT1', 'MCM4', 'SAMD4A', 'CYR61', 'PLOD1', 'SDC4', 'GSS', 'SOCS3', 'MMP3', 'SERPINE1', 'DDX58', 'TERT', 'CEP55', 'BST2', 'LGALS3BP', 'SLC9A1', 'FOSL1', 'EXT1', 'TAPBP', 'PPP2R2D', 'LAMA3', 'AREG', 'ITGA5', 'KLF7', 'CD151', 'CDC25A', 'RBL1', 'APP', 'ADM', 'BIRC5', 'DUSP6', 'TYMP', 'PGK1', 'CCL4', 'HSF1', 'SLC19A1', 'IL11', 'CDC20', 'TNFRSF9', 'E2F1', 'SLC20A1', 'CTPS1', 'JUN', 'PLXNA1', 'XAF1', 'PLAC1', 'NCF2', 'TGIF1', 'GAST', 'CXCL10', 'MAD1L1', 'GPR39', 'FSTL3', 'ADAM12', 'IRF9', 'HOMER3', 'GBP1', 'TLR2', 'UCN', 'ASF1B', 'VEGFC', 'SEC14L2', 'NT5E', 'XPO1', 'MCM10', 'POMGNT1', 'ING1', 'MYBL2', 'PSMB9', 'CYP27B1', 'MCM5', 'AURKB', 'B4GALT1', 'MMP10', 'RHOB', 'SLC16A1', 'RRAS2', 'P4HA1', 'ITGA6', 'EXO1', 'LITAF', 'ETS1', 'SLC7A5', 'MT1E', 'PSMB5', 'HLA-F', 'SOX11', 'FUS', 'AURKA', 'RELB', 'STAT2', 'SIGMAR1', 'ZNF410', 'IGF2BP2', 'FHL2', 'RPTOR', 'CCL7', 'CCNA2', 'TNC', 'TGFA', 'CERS2', 'CTGF', 'MMP14', 'RECQL4', 'UBE2S', 'IFIT3', 'MCM2', 'ACOT7', 'TOMM34', 'CAD', 'CSNK2A1', 'POLD1', 'FOXD1', 'SKP2', 'SIRT6', 'LTBR', 'HTRA2', 'IL24', 'PKM', 'RIPK2', 'ANGPT2', 'BRCA1', 'GALT', 'RAD51B', 'EIF2AK2', 'CASP7', 'TTF2', 'SPHK1', 'BAK1', 'NFKB2', 'KRT18', 'TRIM21', 'ARHGEF1', 'LDHA', 'IPO13', 'IL23A', 'PSMD3', 'HLA-E', 'SMUG1', 'MELTF', 'IPO7', 'ECT2', 'IL2RA', 'ADH5', 'MCM8', 'ACLY', 'TOP1MT', 'LAMC2', 'PRC1', 'IRF1', 'RUVBL1', 'ADAM17', 'BSG', 'SOCS1', 'SLC3A2', 'CGB3', 'CCNB2', 'SNW1', 'KLF6', 'PLAUR', 'STIP1', 'ADA', 'DNMT1', 'CFB', 'HFE', 'ELF4', 'PAEP', 'VMP1', 'SOD2', 'WHSC1', 'FN1', 'ETV4', 'TNFRSF10B', 'BRIP1', 'CDC25B', 'ILF3', 'AXIN1', 'CCNB1', 'SLC22A4', 'MYH9', 'MVP', 'BLM', 'CYLD', 'CXCL5', 'SLCO1B3', 'CDC25C', 'PFKP', 'CDKN3', 'NBN', 'NKX3-1', 'CAV1', 'IFI16', 'CXCL8', 'MAZ', 'HMGA1', 'IL32', 'IRF7', 'GNLY', 'RAD51AP1', 'PGF', 'TGFBI', 'BUB1B', 'CD80', 'FKBP4', 'APAF1', 'SNAI2', 'CEBPE', 'DRAM1', 'MAD2L1', 'CHEK1', 'F3', 'TGFB1', 'MX1', 'ATAD2', 'DUSP4', 'NDC80', 'UPP1', 'RRM2', 'IL1RL1', 'EPHB2', 'PC', 'WDR5', 'KPNA2', 'ETV6', 'COL7A1', 'TNFRSF10A', 'PAK1', 'MAFK', 'IFNAR1', 'ELMO3', 'PSMB10', 'RRP1B', 'HOXA9', 'SLC39A1', 'DDIT4', 'SCARB2', 'MMP28', 'IDO1', 'USP7', 'LAG3', 'PTAFR', 'HOXC9', 'YES1', 'MKL1', 'NELFB', 'TNPO1', 'SQSTM1', 'CD83', 'SFPQ', 'PTGES', 'CDCA7L', 'SND1', 'IGF2R', 'ONECUT2', 'DKK1', 'SMARCA4', 'PCSK1', 'CD44', 'TAF5', 'ENO1', 'SAA1', 'ETV7', 'FANCA', 'MYBBP1A', 'PFKFB3', 'NRIP1', 'DRAP1', 'HSP90AB1', 'CD86', 'PTGS2', 'PSMD11', 'HMMR', 'HNRNPA2B1', 'MLX', 'TRIB3', 'IFITM3', 'TRIM22', 'SALL4', 'CTLA4', 'CASP1', 'DUSP10', 'PCNA', 'SERPINB1', 'TOP2A', 'PMAIP1']
+DOWN in both (216): ['FCER1A', 'HLF', 'NMU', 'SELP', 'MAL', 'HOPX', 'TYRP1', 'CLOCK', 'OCA2', 'PITX2', 'MLANA', 'EVPL', 'RORA', 'GUCY2C', 'LOR', 'CBFA2T3', 'KIT', 'PMEL', 'MAP1LC3A', 'EPB41L3', 'OCLN', 'SLC13A4', 'NTF3', 'MXI1', 'TYR', 'PTGDS', 'CD36', 'TRPS1', 'ZNF750', 'CAPN6', 'DIRAS3', 'PPM1D', 'AGER', 'TEK', 'MAP3K1', 'ALOX12', 'MEIS1', 'SELE', 'MS4A2', 'AR', 'NCOA1', 'F10', 'CBX7', 'HPGD', 'ARG1', 'NR3C2', 'LMO4', 'KRT13', 'KL', 'ACKR1', 'ABCA3', 'PPP1R3C', 'CDO1', 'HHEX', 'CXCL12', 'CYP2C9', 'MEOX2', 'ABCB1', 'TGFBR3', 'MAOB', 'LMO2', 'PTPN13', 'FCGR2B', 'KAT2B', 'PROS1', 'KRT4', 'HBA1', 'COMP', 'FLT3', 'TOP2B', 'FMO3', 'HBA2', 'HBB', 'SALL2', 'TRPV6', 'APOD', 'DKK4', 'EHF', 'NEIL1', 'TNFRSF11A', 'CTNNBIP1', 'CDKN2C', 'PCSK2', 'XPA', 'FOXF1', 'TFAP2B', 'KLF8', 'GP1BB', 'CRLF1', 'HPGDS', 'GDA', 'S1PR1', 'SLC6A4', 'EDNRB', 'PTGFR', 'CRHBP', 'CTSG', 'ZNF383', 'CCR2', 'MAPK7', 'HBD', 'F13A1', 'CCL19', 'CDKN1B', 'CPEB1', 'SPRR3', 'MYB', 'NRCAM', 'SCNN1A', 'MSMB', 'FUT7', 'IGFBP5', 'WISP2', 'FGF7', 'SMO', 'PTN', 'IGF1', 'ID2', 'MMRN1', 'SESN1', 'CHRNA3', 'LTC4S', 'ZNF350', 'S100A4', 'MYH11', 'SRD5A3', 'DACT2', 'FLI1', 'NUPR1', 'CYP1B1', 'ID4', 'DAPK2', 'CITED2', 'ABCG4', 'S100B', 'ZNF423', 'LRBA', 'CXCR2', 'ANG', 'CYP3A4', 'MLYCD', 'KLK10', 'PPARG', 'CRYAB', 'PBX1', 'SATB1', 'COL4A4', 'STMN2', 'TXNIP', 'ALAS2', 'HDC', 'SPRY2', 'CYP4F12', 'BTG2', 'ARNT2', 'MGP', 'PLIN1', 'GRHL1', 'HBG1', 'DCN', 'PF4', 'ACADL', 'SOX2', 'KRT19', 'PPL', 'BEX2', 'PEG3', 'AGT', 'ICAM2', 'LHX6', 'PECAM1', 'CD24', 'NOTCH2', 'DBI', 'LPL', 'KLF4', 'ELANE', 'CCL21', 'CYP2E1', 'NR0B1', 'ST6GAL1', 'MAF', 'PIM1', 'MACC1', 'E2F5', 'CDKN1C', 'CD34', 'TNFRSF13C', 'SPRY1', 'HECA', 'PPP2R2B', 'PDIA2', 'BTG3', 'KDM6A', 'SMARCD3', 'CYP3A7', 'DACH1', 'BMP7', 'PEBP1', 'OGN', 'BCL11A', 'ZNF382', 'BDNF', 'RASGRP3', 'ASPN', 'BACE1', 'SYTL4', 'TP53INP1', 'PHGDH', 'PPP1R13B', 'PRDM2', 'SLC5A1', 'NRXN1', 'NFIX', 'TRPM1', 'TPO']
+mixed/zero direction in both (28): ['YBX1', 'HMGB1', 'CLDN7', 'EPB41L4B', 'ING5', 'TP63', 'SMPD1', 'CEBPZ', 'NPM1', 'TERF1', 'PFDN4', 'SOCS7', 'NFE2L1', 'REEP5', 'SSB', 'HLA-C', 'PRKCA', 'HDAC4', 'ERCC4', 'RUNX2', 'CEACAM1', 'PKNOX1', 'PRNP', 'CLCN5', 'BAX', 'RSF1', 'ELK4', 'NAB1']
+
+=== check each candidate against recomputed truth ===
+gene             q1         q2    in1    in2  verdict
+-- ABSTRACT list --
+STAT1      2.60e-05   3.87e-04   True   True  delta=2.74/3.17  BOTH
+JUN        9.21e-04   2.15e-03   True   True  delta=1.03/1.64  BOTH
+FOSL1      1.06e-05   2.15e-03   True   True  delta=2.30/3.18  BOTH
+RELA       1.45e-05   2.21e-01   True  False  delta=1.42/0.97  only1
+CXCL8      1.56e-05   2.09e-02   True   True  delta=4.90/3.43  BOTH
+CXCL10     6.46e-04   2.79e-03   True   True  delta=4.16/4.99  BOTH
+MMP9       1.60e-05   8.35e-02   True  False  delta=3.60/1.75  only1
+PTGS2      6.20e-03   4.52e-02   True   True  delta=1.75/2.78  BOTH
+E2F1       6.90e-04   2.15e-03   True   True  delta=0.98/2.42  BOTH
+-- RESULTS list --
+STAT1      2.60e-05   3.87e-04   True   True  delta=2.74/3.17  BOTH
+FOSL1      1.06e-05   2.15e-03   True   True  delta=2.30/3.18  BOTH
+CXCL8      1.56e-05   2.09e-02   True   True  delta=4.90/3.43  BOTH
+MMP9       1.60e-05   8.35e-02   True  False  delta=3.60/1.75  only1
+E2F1       6.90e-04   2.15e-03   True   True  delta=0.98/2.42  BOTH
+CXCL10     6.46e-04   2.79e-03   True   True  delta=4.16/4.99  BOTH
+JUN        9.21e-04   2.15e-03   True   True  delta=1.03/1.64  BOTH
+RELA       1.45e-05   2.21e-01   True  False  delta=1.42/0.97  only1
+ETS1       2.56e-03   2.79e-03   True   True  delta=1.01/2.15  BOTH
+
+ABS set == recomputed both_up? False
+RES set == recomputed both_up? False
+
+=== all highlighted genes, recomputed q ===
+gene             q1         q2           d1           d2
+NFKB1      8.45e-01   4.81e-01         0.00         0.16
+RELA       1.45e-05   2.21e-01         1.42         0.97
+STAT1      2.60e-05   3.87e-04         2.74         3.17
+STAT3      2.56e-03   1.41e-01         1.01         0.52
+JUN        9.21e-04   2.15e-03         1.03         1.64
+FOSL1      1.06e-05   2.15e-03         2.30         3.18
+SP1        1.46e-02   9.02e-01        -0.41         0.03
+ETS1       2.56e-03   2.79e-03         1.01         2.15
+E2F1       6.90e-04   2.15e-03         0.98         2.42
+CXCL8      1.56e-05   2.09e-02         4.90         3.43
+CXCL10     6.46e-04   2.79e-03         4.16         4.99
+MMP9       1.60e-05   8.35e-02         3.60         1.75
+PTGS2      6.20e-03   4.52e-02         1.75         2.78
+IL6        9.21e-04   3.37e-01         3.03         1.22
+CCL5       1.87e-03   1.27e-01         1.89         1.60
+IL1B       2.13e-03   2.77e-01         2.50         0.94
+CCND1      6.46e-04   3.16e-01         1.41         0.61
+CDKN1A     1.22e-03   2.38e-01         1.23         0.54
+VEGFA      1.05e-01   3.48e-03         0.56         1.99

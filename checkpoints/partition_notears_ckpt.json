@@ -1,0 +1,263 @@
+{
+  "_config": {
+    "d": 100,
+    "n": 400,
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "K": [
+      3,
+      5,
+      8,
+      10
+    ]
+  },
+  "42": {
+    "full_notears": {
+      "f1": 0.0,
+      "edges": 42,
+      "time_s": 88.3
+    },
+    "X_seed": 42,
+    "K8": {
+      "f1": 0.8571,
+      "precision": 0.878,
+      "recall": 0.8372,
+      "edges": 51,
+      "cross_true": 40,
+      "cross_found": 34,
+      "clusters_ran": 8,
+      "time_s": 353.2,
+      "cluster_sizes": [
+        57,
+        45,
+        42,
+        55,
+        39,
+        46,
+        51,
+        65
+      ]
+    },
+    "K3": {
+      "f1": 0.8718,
+      "precision": 0.9714,
+      "recall": 0.7907,
+      "edges": 38,
+      "cross_true": 31,
+      "cross_found": 27,
+      "clusters_ran": 3,
+      "time_s": 134.1,
+      "cluster_sizes": [
+        106,
+        132,
+        162
+      ]
+    },
+    "K5": {
+      "f1": 0.825,
+      "precision": 0.8919,
+      "recall": 0.7674,
+      "edges": 45,
+      "cross_true": 35,
+      "cross_found": 27,
+      "clusters_ran": 5,
+      "time_s": 195.8,
+      "cluster_sizes": [
+        86,
+        51,
+        95,
+        90,
+        78
+      ]
+    },
+    "K10": {
+      "f1": 0.8571,
+      "precision": 0.8125,
+      "recall": 0.907,
+      "edges": 62,
+      "cross_true": 39,
+      "cross_found": 37,
+      "clusters_ran": 10,
+      "time_s": 344.1,
+      "cluster_sizes": [
+        30,
+        40,
+        35,
+        43,
+        52,
+        46,
+        49,
+        35,
+        37,
+        33
+      ]
+    }
+  },
+  "123": {
+    "full_notears": {
+      "f1": 0.7945,
+      "edges": 32,
+      "time_s": 35.2
+    },
+    "X_seed": 123,
+    "K3": {
+      "f1": 0.8158,
+      "precision": 0.9394,
+      "recall": 0.7209,
+      "edges": 37,
+      "cross_true": 35,
+      "cross_found": 24,
+      "clusters_ran": 3,
+      "time_s": 101.8,
+      "cluster_sizes": [
+        134,
+        132,
+        134
+      ]
+    },
+    "K5": {
+      "f1": 0.881,
+      "precision": 0.9024,
+      "recall": 0.8605,
+      "edges": 46,
+      "cross_true": 38,
+      "cross_found": 32,
+      "clusters_ran": 5,
+      "time_s": 162.5,
+      "cluster_sizes": [
+        73,
+        82,
+        68,
+        86,
+        91
+      ]
+    },
+    "K8": {
+      "f1": 0.8916,
+      "precision": 0.925,
+      "recall": 0.8605,
+      "edges": 47,
+      "cross_true": 35,
+      "cross_found": 29,
+      "clusters_ran": 8,
+      "time_s": 265.3,
+      "cluster_sizes": [
+        42,
+        42,
+        62,
+        48,
+        48,
+        44,
+        53,
+        61
+      ]
+    },
+    "K10": {
+      "f1": 0.8444,
+      "precision": 0.8085,
+      "recall": 0.8837,
+      "edges": 61,
+      "cross_true": 37,
+      "cross_found": 33,
+      "clusters_ran": 10,
+      "time_s": 322.8,
+      "cluster_sizes": [
+        33,
+        32,
+        41,
+        52,
+        42,
+        44,
+        45,
+        29,
+        52,
+        30
+      ]
+    }
+  },
+  "456": {
+    "full_notears": {
+      "f1": 0.7778,
+      "edges": 31,
+      "time_s": 33.3
+    },
+    "X_seed": 456,
+    "K3": {
+      "f1": 0.8571,
+      "precision": 0.9706,
+      "recall": 0.7674,
+      "edges": 38,
+      "cross_true": 29,
+      "cross_found": 22,
+      "clusters_ran": 3,
+      "time_s": 105.6,
+      "cluster_sizes": [
+        112,
+        131,
+        157
+      ]
+    },
+    "K5": {
+      "f1": 0.875,
+      "precision": 0.9459,
+      "recall": 0.814,
+      "edges": 43,
+      "cross_true": 37,
+      "cross_found": 30,
+      "clusters_ran": 5,
+      "time_s": 177.5,
+      "cluster_sizes": [
+        79,
+        77,
+        69,
+        87,
+        88
+      ]
+    },
+    "K8": {
+      "f1": 0.8916,
+      "precision": 0.925,
+      "recall": 0.8605,
+      "edges": 45,
+      "cross_true": 38,
+      "cross_found": 34,
+      "clusters_ran": 8,
+      "time_s": 280.4,
+      "cluster_sizes": [
+        67,
+        55,
+        34,
+        51,
+        54,
+        41,
+        52,
+        46
+      ]
+    },
+    "K10": {
+      "f1": 0.8,
+      "precision": 0.766,
+      "recall": 0.8372,
+      "edges": 62,
+      "cross_true": 40,
+      "cross_found": 34,
+      "clusters_ran": 10,
+      "time_s": 350.9,
+      "cluster_sizes": [
+        22,
+        47,
+        42,
+        39,
+        39,
+        34,
+        47,
+        39,
+        50,
+        41
+      ]
+    }
+  }
+}

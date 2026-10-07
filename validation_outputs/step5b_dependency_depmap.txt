@@ -1,0 +1,45 @@
+Model.csv shape=(2116, 49) cols=['ModelID', 'PatientID', 'CellLineName', 'StrippedCellLineName', 'DepmapModelType', 'OncotreeLineage', 'OncotreePrimaryDisease', 'OncotreeSubtype', 'OncotreeCode', 'PatientSubtypeFeatures', 'RRID', 'Age', 'AgeCategory', 'Sex']
+lineages=['Adrenal Gland', 'Ampulla of Vater', 'Biliary Tract', 'Bladder/Urinary Tract', 'Bone', 'Bowel', 'Breast', 'CNS/Brain', 'Cervix', 'Embryonal', 'Esophagus/Stomach', 'Eye', 'Fibroblast', 'Hair', 'Head and Neck', 'Kidney', 'Liver', 'Lung', 'Lymphoid', 'Muscle', 'Myeloid', 'Normal', 'Other', 'Ovary/Fallopian Tube', 'Pancreas', 'Peripheral Nervous System', 'Pleura', 'Prostate', 'Skin', 'Soft Tissue', 'Testis', 'Thyroid', 'Uterus', 'Vulva/Vagina']
+head&neck lines = 94
+CRISPRGeneEffect columns=18532  e.g. ['A1BG (1)', 'A1CF (29974)', 'A2M (2)']
+core genes present in DepMap CRISPR = 13/13
+CRISPRGeneEffect loaded shape=(1208, 13)
+
+=== mean gene effect (Chronos; more negative = more dependent) ===
+gene         HN_lines        other    HN_n
+STAT1           0.023        0.019      77
+JUN            -0.001        0.026      77
+FOSL1          -0.346       -0.289      77
+RELA            0.099        0.073      77
+CXCL8          -0.552       -0.348      77
+CXCL10         -0.274       -0.285      77
+MMP9           -0.007       -0.012      77
+PTGS2           0.074        0.022      77
+E2F1            0.107        0.079      77
+ETS1           -0.550       -0.396      77
+NFKB1          -0.232       -0.207      77
+STAT3           0.023        0.040      77
+SP1            -0.085       -0.115      77
+
+=== are the 334 Indian both-up genes selective dependencies in H&N lines? ===
+both-up genes present in DepMap = 328
+  mean HN gene-effect  = -0.279
+  mean other           = -0.283
+  top HN-selective (other-minus-HN most positive):
+     SNAI2    HN=-0.371 other=-0.087  sel=0.284
+     ENO1     HN=-0.844 other=-0.563  sel=0.281
+     PGK1     HN=-1.332 other=-1.078  sel=0.254
+     TNPO1    HN=-0.576 other=-0.371  sel=0.205
+     FOSL1    HN=-0.552 other=-0.348  sel=0.204
+     MYH9     HN=-0.735 other=-0.540  sel=0.194
+     NELFB    HN=-1.583 other=-1.393  sel=0.190
+     EXT1     HN=-0.435 other=-0.251  sel=0.184
+     TNFAIP3  HN=-0.129 other=0.046  sel=0.175
+     PCNA     HN=-3.203 other=-3.055  sel=0.148
+     SOCS3    HN=-0.317 other=-0.182  sel=0.136
+     TOP2A    HN=-2.657 other=-2.528  sel=0.129
+  n common-essential controls = 1247
+
+=== REPURPOSINGLog2IC50Matrix.csv ===
+  header[:300]=,DPC-000001,DPC-000015,DPC-000020,DPC-000022,DPC-000023,DPC-000025,DPC-000027,DPC-000030,DPC-000034,DPC-000042,DPC-000043,DPC-000068,DPC-000082,DPC-000083,DPC-000084,DPC-000092,DPC-000101,DPC-000112,DPC-000116,DPC-000122,DPC-000124,DPC-000126,DPC-000127,DPC-000133,DPC-000135,DPC-000141,DPC-000148,DP
+  row1[:300]=ACH-000001,,,,,,,,,-3.00629067900431,,,0.843403429500794,,1.32599181693806,,,,,,,,,,,,1.39451695751824,,,,,,,,,,,,,,,1.2720101643779,,,-9.16055528820799,,,,,,,,,,,,,,,,,,,,,-2.03676802254755,,,,,-2.2091427152463,,,1.2368385411889,,,,,,,,,,,,,,2.96395109608806,,-6.66494846329331,-4.34020962937699,,,,

@@ -1,0 +1,75 @@
+core genes in DepMap expression: 10
+expression matrix shape=(1684, 11)
+GDSC2 shape=(242036, 19)
+GDSC2 x DepMap matched rows=178299  unique lines=701  drugs=286
+
+=== ALL lines: core-score vs AUC (rho<0 => core-high = more sensitive) ===
+drugs tested=286
+-- most SENSITIVE (most negative rho) --
+  Dasatinib                    rho=-0.286 p=1.2e-14 q=4.11e-13  n=699  [ABL, SRC, Ephrins,]
+  BDF00022089a                 rho=-0.245 p=7.2e-09 q=6.65e-08  n=542  [BRPF1, BRPF2, BRPF]
+  LCL161                       rho=-0.236 p=1.1e-09 q=1.27e-08  n=649  [XIAP, IAP1, IAP2]
+  AZD3759                      rho=-0.235 p=3.2e-10 q=3.93e-09  n=702  [EGFR]
+  glutathione                  rho=-0.228 p=4.3e-08 q=3.52e-07  n=563  [anti-oxidant prote]
+  JNK Inhibitor VIII           rho=-0.227 p=1.5e-09 q=1.66e-08  n=692  [JNK]
+  GSK2256098C                  rho=-0.224 p=1.4e-07 q=9.37e-07  n=542  [FAK1]
+  GSK626616AC                  rho=-0.221 p=2.0e-07 q=1.20e-06  n=542  [DYRK1A]
+  615590                       rho=-0.220 p=2.2e-07 q=1.30e-06  n=542  [nan]
+  SGC0946                      rho=-0.214 p=1.3e-08 q=1.13e-07  n=691  [DOT1L]
+  PFI3                         rho=-0.212 p=4.9e-08 q=3.90e-07  n=647  [Polybromo 1, SMARC]
+  CCT007093                    rho=-0.203 p=9.2e-08 q=6.60e-07  n=683  [PPM1D]
+  123138                       rho=-0.200 p=2.7e-06 q=1.23e-05  n=542  [nan]
+  CZC24832                     rho=-0.198 p=3.8e-07 q=2.15e-06  n=647  [PI3Kgamma]
+  Gefitinib                    rho=-0.197 p=1.7e-07 q=1.09e-06  n=696  [EGFR]
+-- most RESISTANT (most positive rho) --
+  Dinaciclib                   rho=+0.287 p=9.8e-14 q=2.49e-12  n=646  [CDK1, CDK2, CDK5, ]
+  BI-2536                      rho=+0.292 p=1.5e-14 q=4.80e-13  n=667  [PLK1, PLK2, PLK3]
+  PBD-288                      rho=+0.305 p=1.0e-13 q=2.49e-12  n=568  [nan]
+  Sorafenib                    rho=+0.307 p=1.2e-16 q=5.83e-15  n=696  [PDGFR, KIT, VEGFR,]
+  Eg5_9814                     rho=+0.320 p=2.2e-14 q=6.40e-13  n=542  [KSP11]
+  POMHEX                       rho=+0.330 p=6.2e-16 q=2.53e-14  n=568  [nan]
+  Sabutoclax                   rho=+0.339 p=7.1e-19 q=5.11e-17  n=646  [BCL2,  BCL-XL,  BF]
+  Axitinib                     rho=+0.346 p=4.3e-21 q=4.14e-19  n=698  [PDGFR, KIT, VEGFR]
+  AZD5991                      rho=+0.350 p=4.6e-17 q=2.66e-15  n=542  [MCL1]
+  Vorinostat                   rho=+0.406 p=4.6e-29 q=1.32e-26  n=697  [HDAC inhibitor Cla]
+
+-- inflammation/apoptosis-pathway drugs --
+  LCL161                       rho=-0.236 p=1.1e-09  n=649  pw=Apoptosis regulation
+  WEHI-539                     rho=-0.093 p=1.4e-02  n=698  pw=Apoptosis regulation
+  UMI-77                       rho=-0.010 p=8.0e-01  n=570  pw=Apoptosis regulation
+  MIM1                         rho=+0.008 p=8.5e-01  n=570  pw=Apoptosis regulation
+  AZD5582                      rho=+0.104 p=8.5e-03  n=641  pw=Apoptosis regulation
+  Obatoclax Mesylate           rho=+0.106 p=1.0e-02  n=594  pw=Apoptosis regulation
+  Sepantronium bromide         rho=+0.111 p=3.4e-03  n=696  pw=Apoptosis regulation
+  TW 37                        rho=+0.120 p=4.4e-02  n=280  pw=Apoptosis regulation
+  Venetoclax                   rho=+0.133 p=4.3e-04  n=696  pw=Apoptosis regulation
+  ABT737                       rho=+0.157 p=3.2e-05  n=695  pw=Apoptosis regulation
+  Navitoclax                   rho=+0.184 p=9.4e-07  n=703  pw=Apoptosis regulation
+  Sabutoclax                   rho=+0.339 p=7.1e-19  n=646  pw=Apoptosis regulation
+  AZD5991                      rho=+0.350 p=4.6e-17  n=542  pw=Apoptosis regulation
+
+=== HEAD&NECK lines only ===  rows=6176 lines=25
+drugs tested=272
+  THR-101                      rho=-0.674 p=2.2e-03  n=18  [Mutant RAS]
+  THR-102                      rho=-0.486 p=4.1e-02  n=18  [Mutant RAS]
+  Nutlin-3a (-)                rho=-0.356 p=8.1e-02  n=25  [MDM2]
+  JAK_8517                     rho=-0.355 p=1.6e-01  n=17  [JAK1, JAK2]
+  AZD5438                      rho=-0.314 p=2.2e-01  n=17  [CDK2]
+  L-Oxonoreleagnine            rho=-0.314 p=2.2e-01  n=17  [nan]
+  Venetoclax                   rho=-0.313 p=1.3e-01  n=25  [BCL2]
+  WEHI-539                     rho=-0.308 p=1.3e-01  n=25  [BCL-XL]
+  IGF1R_3801                   rho=-0.301 p=2.4e-01  n=17  [IGFR1]
+  P22077                       rho=-0.298 p=1.5e-01  n=25  [USP7, USP47]
+  glutathione                  rho=-0.298 p=2.3e-01  n=18  [anti-oxidant prote]
+  BEN                          rho=-0.297 p=2.5e-01  n=17  [nan]
+
+=== named candidate drugs (all lines) ===
+  Bortezomib                   rho=-0.013 p=7.3e-01 n=696
+  Cisplatin                    rho=+0.109 p=8.4e-03 n=582
+  5-Fluorouracil               rho=+0.157 p=2.9e-05 n=704
+  Docetaxel                    rho=+0.114 p=7.3e-05 n=1210
+  Methotrexate                 rho=+0.106 p=7.1e-03 n=646
+  Nutlin-3a (-)                rho=+0.110 p=3.4e-03 n=704
+  Ruxolitinib                  rho=-0.025 p=5.2e-01 n=654
+  Ibrutinib                    rho=-0.004 p=9.3e-01 n=644
+  Vorinostat                   rho=+0.406 p=4.6e-29 n=697

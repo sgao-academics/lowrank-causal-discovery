@@ -1,28 +1,27 @@
-# LaTeX build artifacts
+# --- LaTeX build products -------------------------------------------------
 *.aux
-*.log
 *.out
-*.blg
-*.bbl
-*.toc
-*.lot
-*.lof
+*.log
 *.synctex.gz
-*.fdb_latexmk
-*.fls
-*.thm
-*.nav
-*.snm
-*.vrb
+*.toc
+*.bbl
+*.blg
 
-# Python cache
+# --- manuscript and submission documents (not part of the package) --------
+cs_main.pdf
+cs_supp.pdf
+cs_cover.pdf
+cs_main.tex
+cs_supp.tex
+cs_cover.tex
+_log_*.txt
+
+# --- do not redistribute publisher PDFs of the cited literature -----------
+references_fulltext/
+*.zip
+
+# --- local scratch --------------------------------------------------------
 __pycache__/
 *.pyc
-
-# Temp/development scripts in checkpoints
-checkpoints/_*.py
-
-# Large data (use Replication_Package.zip instead)
-checkpoints/*_repro.json
-checkpoints/gap1_lowrank.json
-checkpoints/depmap_meta.json
+.workbuddy/
+_sipages/

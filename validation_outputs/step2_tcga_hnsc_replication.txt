@@ -1,0 +1,28 @@
+TCGA-HNSC samples=566 tumor=520 normal=44
+genes loaded = 20530
+
+=== inflammatory-core genes: tumour vs normal (TCGA-HNSC) ===
+gene         delta           p
+STAT1         1.29    7.96e-12
+JUN          -0.42    3.32e-03
+FOSL1         0.67    2.77e-02
+RELA          0.05    5.31e-01
+CXCL8           NA          NA
+CXCL10        2.60    2.50e-09
+MMP9          4.10    2.48e-22
+PTGS2         0.83    8.34e-03
+E2F1          1.87    2.13e-23
+ETS1          0.87    2.46e-07
+NFKB1        -0.03    7.40e-01
+STAT3        -0.20    2.22e-02
+SP1          -0.20    1.45e-03
+AR           -2.59    2.15e-14
+
+Indian both-up (FDR<0.05) = 334 genes
+measurable in TCGA-HNSC = 324
+  up (delta>0)        = 295 (91.0%)
+  up AND p<0.05       = 275 (84.9%)
+background (random 4000 genes): up=51.9%  up&p<0.05=32.6%
+odds ratio (both-up replicates vs background) = 11.60
+
+core-score (9 genes): tumour 0.062 vs normal -0.719  p=1.65e-18

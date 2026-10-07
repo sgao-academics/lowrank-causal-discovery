@@ -1,89 +1,101 @@
-# Causal Discovery Scales Linearly
+# A causal network nominates an inflammatory regulatory core in Indian oral cancer
 
-**Low-Rank Factorization Breaks the 500,000x Dimensionality Barrier**
+Replication package for the research article
 
-ICLR 2027 Submission (Anonymous)
+> *An inflammatory regulatory core is activated in Indian oral squamous cell carcinoma:
+> a causal-network-guided analysis of two independent patient cohorts.*
+
+The package contains the causal network, the result files behind every number and
+figure in the paper, the scripts that generate them, and the external-validation
+analyses. Raw third-party datasets are not redistributed here; they are all public
+and are listed under **Data sources** below.
 
 ---
 
-## Abstract
+## What is in here
 
-We show that causal discovery can scale linearly with the number of variables. Factorizing the adjacency matrix W = UV^T (r << d) reduces complexity from O(d^3) to O(dr^2). On a single consumer GPU, the method scales to d = 100,000,000 -- a 500,000x expansion beyond the prior limit (d = 200), while maintaining F1 > 0.98 on synthetic benchmarks.
+| Path | Contents |
+| :--- | :--- |
+| `checkpoints/edge_list.csv` | The released directed network: 28,247 edges over 2,879 genes, with a `source` column giving the provenance of each edge (`discovered`, `TRRUST`, `pathway_*`, `crosstalk`). |
+| `checkpoints/*.json` | All numeric results reported in the text and supplement: degree structure, synthetic benchmarks, rank diagnostics, and the MSigDB hallmark enrichment test. |
+| `scripts/_build_cs_refs.py` | Builds the numbered reference list in order of first citation. |
+| `scripts/_compile_cs.py`, `scripts/_audit_cs.py` | Compile the manuscript and audit it (word counts, float order, page count, undefined citations). |
+| `scripts/_bench_partition_notears.py` | Synthetic Erdős–Rényi benchmark: low-rank estimator vs explicit-adjacency methods. |
+| `figure_scripts/_gen_figs_oral.py` | Generates Figures 1-3 and Figure S2 from `checkpoints/edge_list.csv` and the cohort matrices. |
+| `figures_cs/` | The generated figures (PDF and PNG). |
+| `scripts/validation/` | The eight external-validation and robustness analyses (see below). |
+| `validation_outputs/` | The raw console output of each validation script, as run. |
 
-## Reproduction
+### Validation scripts
 
-All 8 figures can be regenerated from pre-computed checkpoints:
+| Script | Analysis reported in |
+| :--- | :--- |
+| `step1_two_cohort_core.py` | Benjamini–Hochberg recomputation of the two Indian cohorts, and the both-cohort core |
+| `step2_tcga_hnsc_replication.py` | Section S8 — replication in an independent non-Indian cohort (TCGA-HNSC) |
+| `step3_purity_deconvolution.py` | Section S9 — the core survives adjustment for immune and stromal content |
+| `step4a_singlecell_fetch.py`, `step4b_singlecell_localisation.py` | Section S10 — single-cell localisation of the core (GSE103322) |
+| `step5a_drug_response_gdsc2.py` | Section S11 — core score vs drug response (GDSC2) |
+| `step5b_dependency_depmap.py` | Section S11 — CRISPR gene dependency (DepMap), reported as a negative result |
+| `step6_hallmark_enrichment.py` | Section S3 — MSigDB hallmark enrichment of the estimator-proposed edges, against uniform and degree-matched nulls |
+| `step7_degree_vs_differential_expression.py` | Section S6 — what the degree ranking does and does not predict |
+| `step8_gene_set_enrichment.py` | Section S4 — gene-set enrichment with odds ratios and confidence intervals |
 
-```bash
-# Regenerate all figures (requires Python 3.12+, PyTorch 2.11+)
-python scripts/gen_fig1_architecture.py
-python scripts/gen_fig2_benchmark.py
-python scripts/gen_fig3_validation.py
-python scripts/gen_fig4_sensitivity.py
-python scripts/gen_fig5_ablation.py
-python scripts/gen_fig6_failure.py
-python scripts/gen_fig_appendix_A1_extreme.py
-python scripts/gen_fig_appendix_A2_multiscale.py
-```
+---
 
-Figures 1-5 complete in seconds. Figure A2 trains for 800 epochs (~2 min on GPU). No downloads required; all data in `checkpoints/`.
+## Data sources
 
-## Repository Structure
+Download these yourself; none is redistributed here.
 
-```
-├── main.pdf                                  # Compiled paper
-├── main.tex                                  # LaTeX source
-├── refs.bib                                  # Bibliography (38 verified references)
-├── figures/                                  # All 8 figures (PNG + PDF)
-│   ├── fig1_architecture.*
-│   ├── fig2_benchmark.*
-│   ├── fig3_validation.*
-│   ├── fig4_sensitivity.*
-│   ├── fig5_ablation.*
-│   ├── fig6_failure.*
-│   ├── fig_appendix_A1_extreme_scale.*
-│   └── fig_appendix_A2_multiscale_heatmap.*
-├── scripts/                                  # Figure generation scripts (8 files)
-├── checkpoints/                              # Pre-computed experimental results
-│   ├── sota_bench.json                       # NOTEARS/DAGMA/GOLEM benchmarks
-│   ├── extreme_scale.json                    # d=2K to 100M scaling
-│   ├── rank_violation.json                   # Rank misspecification
-│   ├── multiscale_ablation.json              # Multi-scale decomposition
-│   ├── sachs_*.json                          # Protein signaling validation
-│   └── ...
-└── LowRankGNN_Replication_Package.zip        # Full reproduction archive
-```
+| Resource | Where |
+| :--- | :--- |
+| GSE85195 (34 gingivobuccal carcinomas, 15 leukoplakias; GPL6480) | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE85195 |
+| GSE23558 (27 oral tumours, 5 normal; GPL6480) | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE23558 |
+| GPL6480 platform annotation | GEO, `GPL6480.annot.gz` |
+| GSE103322 (head-and-neck single-cell RNA-seq) | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103322 |
+| DepMap 24Q2 (CRISPR Chronos gene effect, expression, model table) | https://depmap.org/portal/data_page/ |
+| GDSC2 drug-response dataset | https://www.cancerrxgene.org/downloads |
+| MSigDB hallmark gene sets | https://www.gsea-msigdb.org/gsea/msigdb/human/collections.jsp |
+| TCGA-HNSC expression (pan-cancer normalised release) | https://xenabrowser.net/datapages/ |
+| TRRUST v2 | https://www.grnpedia.org/trrust/ |
 
-## Key Results
+---
 
-| Method | d_max | F1 @ d=200 | Time @ d=100 |
-|:--|:--|:--|:--|
-| NOTEARS | 200 | 0.001 | 984s |
-| DAGMA | 150 | 0.000 | 29.6s |
-| GOLEM | 150 | 0.023 | 67.4s |
-| **Ours** | **100,000,000** | **0.991** | **0.1s** |
+## Setting paths
 
-| Application | Metric |
-|:--|:--|
-| Genome-scale recovery (d=19,215) | 89.1%, 26 min |
-| CRISPR dependency prediction | r = 0.912 |
-| Drug sensitivity (1,482 compounds) | r = 0.865 |
-| TRRUST validation | 94/94 edges, precision = 1.00 |
-| TCGA pan-cancer | 33/33 cancers |
-| Extreme scale | d=100M, 738s on consumer GPU |
+The scripts use two placeholders so that no local path is hard-coded:
 
-## Citation
+* `{DATA_ROOT}` — the directory holding the downloaded public datasets. The scripts
+  expect a layout such as
+  `{DATA_ROOT}/cancer_application/data/indian_oral/` (the two cohort series matrices
+  and `indian_genomewide_de.json`), `{DATA_ROOT}/single_cell/`, and so on.
+* Paths beginning with `.` are relative to this repository.
 
-```bibtex
-@inproceedings{lowrankgnn2027,
-  title={Causal Discovery Scales Linearly: Low-Rank Factorization
-         Breaks the 500,000x Dimensionality Barrier},
-  author={Anonymous},
-  booktitle={International Conference on Learning Representations},
-  year={2027}
-}
-```
+Run every script from the repository root.
 
-## License
+---
 
-Code and data released for reproducibility. All checkpoints are pre-computed and deterministic (seed=42).
+## Requirements
+
+Python 3.12 with NumPy, SciPy, pandas, matplotlib and PyTorch. See
+`requirements.txt`. The network itself was estimated on a single workstation
+(AMD Ryzen 9 8945HX, 32 GB RAM, one NVIDIA RTX 5060 with 8 GB); none of the
+validation scripts needs a GPU.
+
+---
+
+## Notes on reproducibility
+
+* The network edge list and the result files are included, so every number in the
+  paper can be checked without refitting the network.
+* Synthetic benchmarks in `scripts/_bench_partition_notears.py` use fixed seeds.
+* The exact plot style used for the figures is defined inside
+  `figure_scripts/_gen_figs_oral.py`.
+* `.gitignore` excludes publisher PDFs of the cited literature; those are not
+  redistributed for copyright reasons.
+
+---
+
+## Licence
+
+The code and derived data in this repository are released for academic reuse.
+Third-party datasets remain under the terms of their original providers.

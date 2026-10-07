@@ -1,0 +1,41 @@
+probes with symbol: 30723
+
+########## GSE85195 : 34 case vs 15 ctrl (genes=19565) ##########
+core genes used=['STAT1', 'JUN', 'FOSL1', 'RELA', 'CXCL8', 'CXCL10', 'MMP9', 'PTGS2', 'E2F1', 'ETS1']
+immune markers=23  stromal markers=21
+immune score: case 0.116 vs ctrl -0.273  p=4.04e-02
+stromal score: case 0.110 vs ctrl -0.338  p=3.83e-02
+core  score: case 0.430 vs ctrl -0.905  p=5.51e-08
+Spearman core~immune = 0.303 ; core~stroma = 0.316
+ADJUSTED core (regressed on immune+stroma): case 0.379 vs ctrl -0.773  p=6.22e-08
+per-gene  raw p / adjusted p (group coef after immune+stroma):
+   STAT1   raw=1.39e-06  adj=1.08e-09  (coef=+2.38)
+   JUN     raw=1.99e-04  adj=4.69e-06  (coef=+1.10)
+   FOSL1   raw=2.04e-07  adj=1.90e-10  (coef=+2.55)
+   RELA    raw=4.08e-07  adj=2.92e-10  (coef=+1.54)
+   CXCL8   raw=4.57e-07  adj=1.63e-08  (coef=+4.40)
+   CXCL10  raw=1.29e-04  adj=4.25e-04  (coef=+3.16)
+   MMP9    raw=5.12e-07  adj=5.87e-08  (coef=+2.92)
+   PTGS2   raw=1.99e-03  adj=5.49e-04  (coef=+1.95)
+   E2F1    raw=1.41e-04  adj=1.15e-05  (coef=+1.12)
+   ETS1    raw=6.86e-04  adj=9.84e-03  (coef=+0.81)
+
+########## GSE23558 : 27 case vs 5 ctrl (genes=19565) ##########
+core genes used=['STAT1', 'JUN', 'FOSL1', 'RELA', 'CXCL8', 'CXCL10', 'MMP9', 'PTGS2', 'E2F1', 'ETS1']
+immune markers=23  stromal markers=21
+immune score: case -0.056 vs ctrl 0.301  p=2.41e-01
+stromal score: case -0.046 vs ctrl 0.250  p=5.79e-01
+core  score: case 0.246 vs ctrl -1.326  p=9.93e-06
+Spearman core~immune = 0.187 ; core~stroma = -0.023
+ADJUSTED core (regressed on immune+stroma): case 0.238 vs ctrl -1.286  p=9.93e-06
+per-gene  raw p / adjusted p (group coef after immune+stroma):
+   STAT1   raw=9.93e-06  adj=2.63e-09  (coef=+3.34)
+   JUN     raw=1.89e-04  adj=7.87e-04  (coef=+1.56)
+   FOSL1   raw=1.89e-04  adj=9.19e-05  (coef=+2.99)
+   RELA    raw=1.09e-01  adj=7.46e-02  (coef=+1.00)
+   CXCL8   raw=5.06e-03  adj=3.80e-03  (coef=+3.65)
+   CXCL10  raw=2.88e-04  adj=2.61e-05  (coef=+5.37)
+   MMP9    raw=3.01e-02  adj=4.79e-03  (coef=+2.14)
+   PTGS2   raw=1.34e-02  adj=2.58e-02  (coef=+2.59)
+   E2F1    raw=1.89e-04  adj=3.66e-06  (coef=+2.53)
+   ETS1    raw=2.88e-04  adj=2.05e-04  (coef=+2.24)

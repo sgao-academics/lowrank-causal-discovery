@@ -1,0 +1,16 @@
+=== GSE85195 ===
+  network genes n=2809  up&p<0.05 = 822 (29.3%)
+  rest       n=16756  up&p<0.05 = 4005 (23.9%)
+  ratio = 1.224   OR = 1.317 (95% CI 1.205-1.439)  chi2 p=1.063e-09  Fisher p=2.106e-09
+=== GSE23558 ===
+  network genes n=2809  up&p<0.05 = 723 (25.7%)
+  rest       n=16756  up&p<0.05 = 3017 (18.0%)
+  ratio = 1.429   OR = 1.578 (95% CI 1.438-1.733)  chi2 p=5.105e-22  Fisher p=9.690e-21
+
+both-cohort up (FDR5) set = 334 ; baseline 334/2809 = 11.9%
+  top- 50 out-degree:   9/ 50 = 18.0%  binom p=1.336e-01 (baseline 11.9%)
+  top-100 out-degree:  12/100 = 12.0%  binom p=5.324e-01 (baseline 11.9%)
+  top-200 out-degree:  24/200 = 12.0%  binom p=5.133e-01 (baseline 11.9%)
+  top- 50 in-degree:   9/ 50 = 18.0%  binom p=1.336e-01 (baseline 11.9%)
+  top-100 in-degree:  21/100 = 21.0%  binom p=6.559e-03 (baseline 11.9%)
+  top-200 in-degree:  36/200 = 18.0%  binom p=7.452e-03 (baseline 11.9%)
