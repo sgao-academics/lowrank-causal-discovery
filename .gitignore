@@ -25,3 +25,7 @@ __pycache__/
 *.pyc
 .workbuddy/
 _sipages/
+
+# --- figures are not redistributed (drawn with a local style module) -------
+figures_cs/
+figure_scripts/
