@@ -21,9 +21,9 @@ and are listed under **Data sources** below.
 | `scripts/_build_cs_refs.py` | Builds the numbered reference list in order of first citation. |
 | `scripts/_compile_cs.py`, `scripts/_audit_cs.py` | Compile the manuscript and audit it (word counts, float order, page count, undefined citations). |
 | `scripts/_bench_partition_notears.py` | Synthetic Erdős–Rényi benchmark: low-rank estimator vs explicit-adjacency methods. |
-| `figure_scripts/_gen_figs_oral.py` | Generates Figures 1-3 and Figure S2 from `checkpoints/edge_list.csv` and the cohort matrices. |
-| `figures_cs/` | The generated figures (PDF and PNG). |
-| `scripts/validation/` | The ten external-validation and robustness analyses (see below). |
+| `figure_scripts/` | Plotting code. `_gen_figs_oral.py` drew an earlier version of Figures 1-3 and Figure S2 from `checkpoints/edge_list.csv`; the figures of the submitted manuscript are the ones in `figures_cs/`. |
+| `figures_cs/` | The figures of the submitted manuscript (PDF and PNG). |
+| `scripts/validation/` | The eleven external-validation and robustness analyses (see below). |
 | `validation_outputs/` | The raw console output of each validation script, as run. |
 
 ### Validation scripts
@@ -41,6 +41,7 @@ and are listed under **Data sources** below.
 | `step8_gene_set_enrichment.py` | Section S4 — gene-set enrichment with odds ratios and confidence intervals |
 | `step9_pancancer_specificity.py` | Section S12 — the core across all 21 TCGA cohorts with adjacent normal tissue |
 | `step10_multiomics_cnv_methylation.py` | Section S13 — GISTIC copy number and 450k promoter methylation of the core genes (TCGA-HNSC) |
+| `step11_hnsc_clinical_correlates.py` | Section S14 — sub-site, extent and outcome of the core in TCGA-HNSC |
 
 ---
 
@@ -58,6 +59,8 @@ Download these yourself; none is redistributed here.
 | GDSC2 drug-response dataset | https://www.cancerrxgene.org/downloads |
 | MSigDB hallmark gene sets | https://www.gsea-msigdb.org/gsea/msigdb/human/collections.jsp |
 | TCGA-HNSC expression (pan-cancer normalised release) | https://xenabrowser.net/datapages/ |
+| TCGA-HNSC clinical matrix (anatomical sub-site, pathological stage, HPV by p16) | UCSC Xena, `TCGA.HNSC.sampleMap/HNSC_clinicalMatrix` (https://xenabrowser.net/datapages/) |
+| Pan-cancer overall survival (TCGA-HNSC subset) | UCSC Xena, pan-cancer survival release (https://xenabrowser.net/datapages/) |
 | TCGA-HNSC gene-level GISTIC copy number and HumanMethylation450 beta values | UCSC Xena, `TCGA.HNSC.sampleMap` (https://xenabrowser.net/datapages/) |
 | Illumina HumanMethylation450 manifest v1.2 (probe-to-gene and region annotation) | https://webdata.illumina.com/downloads/productfiles/humanmethylation450/humanmethylation450_15017482_v1-2.csv |
 | TRRUST v2 | https://www.grnpedia.org/trrust/ |
@@ -76,7 +79,10 @@ The scripts use two placeholders so that no local path is hard-coded:
   `TCGA_<CODE>_HiSeqV2.tsv` matrices under `{DATA_ROOT}/cancer_application/data/`.
   `step10_multiomics_cnv_methylation.py` downloads its two Xena files and the
   Illumina manifest into `{DATA_ROOT}/cancer_application/data/hnsc_multiomics/`
-  on first run.
+  on first run. `step11_hnsc_clinical_correlates.py` expects the TCGA-HNSC
+  expression and clinical matrices under `{DATA_ROOT}/cancer_application/data/`
+  and the survival table under
+  `{DATA_ROOT}/cancer_application/data/validation/pancan_os/`.
 * Paths beginning with `.` are relative to this repository.
 
 Run every script from the repository root.
@@ -97,8 +103,10 @@ validation scripts needs a GPU.
 * The network edge list and the result files are included, so every number in the
   paper can be checked without refitting the network.
 * Synthetic benchmarks in `scripts/_bench_partition_notears.py` use fixed seeds.
-* The exact plot style used for the figures is defined inside
-  `figure_scripts/_gen_figs_oral.py`.
+* The figures of the submitted manuscript are the files in `figures_cs/`. They
+  were drawn with a local house-style module (fonts, colour tokens, panel
+  letters) that is not redistributed, so `figure_scripts/` reproduces an
+  earlier version of the figures rather than the submitted ones.
 * `.gitignore` excludes publisher PDFs of the cited literature; those are not
   redistributed for copyright reasons.
 
