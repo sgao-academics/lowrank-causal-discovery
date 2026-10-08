@@ -21,7 +21,7 @@ and are listed under **Data sources** below.
 | `scripts/_build_cs_refs.py` | Builds the numbered reference list in order of first citation. |
 | `scripts/_compile_cs.py`, `scripts/_audit_cs.py` | Compile the manuscript and audit it (word counts, float order, page count, undefined citations). |
 | `scripts/_bench_partition_notears.py` | Synthetic Erdős–Rényi benchmark: low-rank estimator vs explicit-adjacency methods. |
-| `scripts/validation/` | The eleven external-validation and robustness analyses (see below). |
+| `scripts/validation/` | The thirteen external-validation and robustness analyses (see below). |
 | `validation_outputs/` | The raw console output of each validation script, as run. |
 
 ### Validation scripts
@@ -40,6 +40,8 @@ and are listed under **Data sources** below.
 | `step9_pancancer_specificity.py` | Section S12 — the core across all 21 TCGA cohorts with adjacent normal tissue |
 | `step10_multiomics_cnv_methylation.py` | Section S13 — GISTIC copy number and 450k promoter methylation of the core genes (TCGA-HNSC) |
 | `step11_hnsc_clinical_correlates.py` | Section S14 — sub-site, extent and outcome of the core in TCGA-HNSC |
+| `step12_transcriptome_wide_correction.py` | Section S5 — the transcriptome-wide Benjamini–Hochberg correction, reported beside the network-scoped one |
+| `step13_oral_robustness.py` | Section S4 — sex composition and the Y-chromosome score, expression-level matching within deciles of mean expression, and the out-degree enrichment with every X-, Y- and mitochondrial gene removed |
 
 ---
 

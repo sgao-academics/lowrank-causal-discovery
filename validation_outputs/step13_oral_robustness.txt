@@ -1,0 +1,61 @@
+gene symbols on the platform: 30723
+network genes in the released edge list: 2879
+
+=== sex composition (GEO series-matrix characteristics) ===
+GSE85195 (n = 50)
+   Oral Tumor Tissue                        {'Male': 25, 'Female': 9}
+   Leukoplakia- Oral Precancerous lesion    {'Male': 13, 'Female': 2}
+   Oral Normal Tissue                       {'Female': 1}
+GSE23558 (n = 32)
+   Oral Tumor Tissue                        {'Female': 7, 'Male': 20}
+   Oral Normal Tissue                       {'Male': 3, 'Female': 1, 'Pooled RNA (5 Males + 4 Females)': 1}
+
+=== Y-chromosome check, GSE23558 ===
+probes mapping to a chrY gene: 81 over 60 distinct genes
+   RPS4Y1   delta  +3.03  p = 0.335
+   DDX3Y    delta  +2.33  p = 0.183
+   KDM5D    delta  +0.83  p = 0.614
+   UTY      delta  -0.31  p = 0.545
+   USP9Y    delta  -0.25  p = 0.65
+   EIF1AY   delta  +0.37  p = 0.92
+   ZFY      delta  +0.55  p = 0.479
+   NLGN4Y   delta  +0.73  p = 0.448
+combined Y score (mean of 81 probes): tumour median 0.062, control median 0.108, Mann-Whitney p = 0.545
+
+=== expression-level matching, within deciles of mean expression ===
+GSE85195 (19565 measurable genes)
+   decile     n_net   n_oth  up_net  up_oth   ratio
+   1            117    1840   0.231   0.295    0.78
+   2            154    1802   0.071   0.058    1.23
+   3            199    1758   0.201   0.105    1.92
+   4            197    1759   0.228   0.196    1.17
+   5            194    1763   0.294   0.252    1.17
+   6            205    1752   0.385   0.308    1.25
+   7            242    1714   0.364   0.326    1.12
+   8            245    1712   0.376   0.317    1.18
+   9            232    1724   0.371   0.306    1.21
+   10           300    1657   0.313   0.255    1.23
+GSE23558 (19565 measurable genes)
+   decile     n_net   n_oth  up_net  up_oth   ratio
+   1            232    1725   0.000   0.000    None
+   2            152    1804   0.000   0.000    None
+   3            166    1791   0.000   0.000    None
+   4            183    1773   0.000   0.000    None
+   5            186    1771   0.000   0.001     0.0
+   6            170    1787   0.053   0.044    1.21
+   7            190    1766   0.274   0.229    1.19
+   8            218    1739   0.326   0.439    0.74
+   9            263    1693   0.582   0.507    1.15
+   10           326    1631   0.840   0.658    1.28
+
+=== out-degree enrichment for up-regulation, X/Y/MT removed ===
+GSE85195: measurable network genes 2809 -> 2715 (94 X/Y/MT removed)
+   network background (X/Y/MT removed) = 0.2954
+   top- 50: 0.440 up-regulated against 0.2954 (p = 0.0211)
+   top-100: 0.360 up-regulated against 0.2954 (p = 0.0972)
+   top-200: 0.320 up-regulated against 0.2954 (p = 0.2449)
+GSE23558: measurable network genes 2809 -> 2715 (94 X/Y/MT removed)
+   network background (X/Y/MT removed) = 0.2611
+   top- 50: 0.300 up-regulated against 0.2611 (p = 0.3141)
+   top-100: 0.350 up-regulated against 0.2611 (p = 0.0308)
+   top-200: 0.310 up-regulated against 0.2611 (p = 0.0696)

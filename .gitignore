@@ -14,17 +14,32 @@ cs_cover.pdf
 cs_main.tex
 cs_supp.tex
 cs_cover.tex
+refs.bib
+cs_refs.tex
 _log_*.txt
 
 # --- do not redistribute publisher PDFs of the cited literature -----------
 references_fulltext/
 *.zip
 
-# --- local scratch --------------------------------------------------------
+# --- local scratch: draft helpers, downloaders, one-off scripts ------------
 __pycache__/
 *.pyc
 .workbuddy/
 _sipages/
+REFERENCES_VERIFIED.md
+scripts/_oa_download*.py
+scripts/_verify_fulltext.py
+scripts/_doi_audit.py
+scripts/_fixup.py
+scripts/_fix_ckpt.py
+scripts/_test_gpu_notears.py
+scripts/_run_pathway_enrichment.py
+checkpoints/_*.py
+checkpoints/cs_numbers.json
+checkpoints/pathway_enrichment.json
+checkpoints/finance_result.json
+*.xlsx
 
 # --- figures are not redistributed (drawn with a local style module) -------
 figures_cs/

@@ -1,0 +1,252 @@
+{
+ "sex_composition": {
+  "GSE85195": {
+   "Oral Tumor Tissue": {
+    "Male": 25,
+    "Female": 9
+   },
+   "Leukoplakia- Oral Precancerous lesion": {
+    "Male": 13,
+    "Female": 2
+   },
+   "Oral Normal Tissue": {
+    "Female": 1
+   }
+  },
+  "GSE23558": {
+   "Oral Tumor Tissue": {
+    "Female": 7,
+    "Male": 20
+   },
+   "Oral Normal Tissue": {
+    "Male": 3,
+    "Female": 1,
+    "Pooled RNA (5 Males + 4 Females)": 1
+   }
+  }
+ },
+ "y_check": {
+  "n_probes": 81,
+  "tumour_median": 0.061715932333333307,
+  "control_median": 0.10798385050617283,
+  "p": 0.5447819005243921
+ },
+ "expr_matched": {
+  "GSE85195": [
+   {
+    "decile": 1,
+    "n_net": 117,
+    "n_oth": 1840,
+    "up_net": 0.231,
+    "up_oth": 0.295,
+    "ratio": 0.78
+   },
+   {
+    "decile": 2,
+    "n_net": 154,
+    "n_oth": 1802,
+    "up_net": 0.071,
+    "up_oth": 0.058,
+    "ratio": 1.23
+   },
+   {
+    "decile": 3,
+    "n_net": 199,
+    "n_oth": 1758,
+    "up_net": 0.201,
+    "up_oth": 0.105,
+    "ratio": 1.92
+   },
+   {
+    "decile": 4,
+    "n_net": 197,
+    "n_oth": 1759,
+    "up_net": 0.228,
+    "up_oth": 0.196,
+    "ratio": 1.17
+   },
+   {
+    "decile": 5,
+    "n_net": 194,
+    "n_oth": 1763,
+    "up_net": 0.294,
+    "up_oth": 0.252,
+    "ratio": 1.17
+   },
+   {
+    "decile": 6,
+    "n_net": 205,
+    "n_oth": 1752,
+    "up_net": 0.385,
+    "up_oth": 0.308,
+    "ratio": 1.25
+   },
+   {
+    "decile": 7,
+    "n_net": 242,
+    "n_oth": 1714,
+    "up_net": 0.364,
+    "up_oth": 0.326,
+    "ratio": 1.12
+   },
+   {
+    "decile": 8,
+    "n_net": 245,
+    "n_oth": 1712,
+    "up_net": 0.376,
+    "up_oth": 0.317,
+    "ratio": 1.18
+   },
+   {
+    "decile": 9,
+    "n_net": 232,
+    "n_oth": 1724,
+    "up_net": 0.371,
+    "up_oth": 0.306,
+    "ratio": 1.21
+   },
+   {
+    "decile": 10,
+    "n_net": 300,
+    "n_oth": 1657,
+    "up_net": 0.313,
+    "up_oth": 0.255,
+    "ratio": 1.23
+   }
+  ],
+  "GSE23558": [
+   {
+    "decile": 1,
+    "n_net": 232,
+    "n_oth": 1725,
+    "up_net": 0.0,
+    "up_oth": 0.0,
+    "ratio": null
+   },
+   {
+    "decile": 2,
+    "n_net": 152,
+    "n_oth": 1804,
+    "up_net": 0.0,
+    "up_oth": 0.0,
+    "ratio": null
+   },
+   {
+    "decile": 3,
+    "n_net": 166,
+    "n_oth": 1791,
+    "up_net": 0.0,
+    "up_oth": 0.0,
+    "ratio": null
+   },
+   {
+    "decile": 4,
+    "n_net": 183,
+    "n_oth": 1773,
+    "up_net": 0.0,
+    "up_oth": 0.0,
+    "ratio": null
+   },
+   {
+    "decile": 5,
+    "n_net": 186,
+    "n_oth": 1771,
+    "up_net": 0.0,
+    "up_oth": 0.001,
+    "ratio": 0.0
+   },
+   {
+    "decile": 6,
+    "n_net": 170,
+    "n_oth": 1787,
+    "up_net": 0.053,
+    "up_oth": 0.044,
+    "ratio": 1.21
+   },
+   {
+    "decile": 7,
+    "n_net": 190,
+    "n_oth": 1766,
+    "up_net": 0.274,
+    "up_oth": 0.229,
+    "ratio": 1.19
+   },
+   {
+    "decile": 8,
+    "n_net": 218,
+    "n_oth": 1739,
+    "up_net": 0.326,
+    "up_oth": 0.439,
+    "ratio": 0.74
+   },
+   {
+    "decile": 9,
+    "n_net": 263,
+    "n_oth": 1693,
+    "up_net": 0.582,
+    "up_oth": 0.507,
+    "ratio": 1.15
+   },
+   {
+    "decile": 10,
+    "n_net": 326,
+    "n_oth": 1631,
+    "up_net": 0.84,
+    "up_oth": 0.658,
+    "ratio": 1.28
+   }
+  ]
+ },
+ "enrichment_no_sex": {
+  "GSE85195": {
+   "n_measurable": 2809,
+   "n_sex_removed": 94,
+   "background": 0.2954,
+   "topk": {
+    "50": {
+     "obs": 0.44,
+     "bg": 0.2954,
+     "hits": 22,
+     "p": 0.021051129822445235
+    },
+    "100": {
+     "obs": 0.36,
+     "bg": 0.2954,
+     "hits": 36,
+     "p": 0.09723136277683203
+    },
+    "200": {
+     "obs": 0.32,
+     "bg": 0.2954,
+     "hits": 64,
+     "p": 0.24488139457495559
+    }
+   }
+  },
+  "GSE23558": {
+   "n_measurable": 2809,
+   "n_sex_removed": 94,
+   "background": 0.2611,
+   "topk": {
+    "50": {
+     "obs": 0.3,
+     "bg": 0.2611,
+     "hits": 15,
+     "p": 0.31413145110363405
+    },
+    "100": {
+     "obs": 0.35,
+     "bg": 0.2611,
+     "hits": 35,
+     "p": 0.030801938777222003
+    },
+    "200": {
+     "obs": 0.31,
+     "bg": 0.2611,
+     "hits": 62,
+     "p": 0.06963344617101914
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,35 @@
+=== GSE85195 ===
+  genes tested                    19565
+  transcriptome-wide FDR < 5%    9330  (up 4189, down 5141)
+  per-gene transcriptome-wide FDR:
+    FOSL1   FDR = 1.43e-05   (delta +2.30)
+    RELA    FDR = 1.77e-05   (delta +1.42)
+    CXCL8   FDR = 1.84e-05   (delta +4.90)
+    MMP9    FDR = 1.92e-05   (delta +3.60)
+    STAT1   FDR = 3.04e-05   (delta +2.74)
+    CXCL10  FDR = 0.00072   (delta +4.16)
+    JUN     FDR = 0.00101   (delta +1.03)
+    PTGS2   FDR = 0.00661   (delta +1.75)
+    ETS1    FDR = 0.00277   (delta +1.01)
+
+=== GSE23558 ===
+  genes tested                    19565
+  transcriptome-wide FDR < 5%    4066  (up 2298, down 1768)
+  per-gene transcriptome-wide FDR:
+    CA9     FDR = 0.000607   (delta +6.91)
+    MMP1    FDR = 0.000607   (delta +5.12)
+    SPP1    FDR = 0.000607   (delta +4.94)
+    STAT1   FDR = 0.000607   (delta +3.17)
+    CD274   FDR = 0.00183   (delta +3.41)
+    MMP3    FDR = 0.0026   (delta +5.86)
+    E2F1    FDR = 0.00327   (delta +2.42)
+    JUN     FDR = 0.00327   (delta +1.64)
+    FOSL1   FDR = 0.00327   (delta +3.18)
+    CXCL10  FDR = 0.00424   (delta +4.99)
+    ETS1    FDR = 0.00424   (delta +2.15)
+    VEGFA   FDR = 0.00533   (delta +1.99)
+    MMP10   FDR = 0.0068   (delta +5.56)
+    CXCL8   FDR = 0.0292   (delta +3.43)
+    PTGS2   FDR = 0.0578   (delta +2.78)
+    MMP9    FDR = 0.103   (delta +1.75)
+    RELA    FDR = 0.25   (delta +0.97)
